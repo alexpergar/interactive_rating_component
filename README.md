@@ -29,6 +29,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution site](https://www.frontendmentor.io/solutions/interactive-rating-component-with-jquery-c_IMoEQGwT)
+- Live Site URL: [Live site]( https://alexpergar.github.io/interactive_rating_component/)
 
