@@ -1,0 +1,155 @@
+/* Imports, variables and global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+
+:root {
+    --text-color: hsl(217, 12%, 63%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --medium-grey: hsl(214, 13%, 22%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Overpass', sans-serif;
+    color: var(--text-color);
+}
+
+/* Rating screen */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--very-dark-blue);
+}
+
+h3 {
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+}
+
+.text h3 {
+    margin-bottom: 10px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+
+    width: 410px;
+    height: 430px;
+    padding: 20px 35px;
+    background-color: var(--dark-blue);
+
+    border-radius: 2rem;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle-button {
+    display: grid;
+    place-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    border-width: 0;
+    border-radius: 50%;
+    font-size: 1.1em;
+}
+
+.circle-button:hover {
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+}
+
+.circle-button-inactive {
+    background-color: var(--medium-grey);
+    color: var(--text-color);
+}
+
+.circle-button-active {
+    background-color: var(--text-color);
+    color: white;
+}
+
+.star-button {
+    background-color: var(--medium-grey) !important;
+    color: var(--text-color) !important;
+    cursor: default !important;
+}
+
+.submit-button {
+    height: 44px;
+    border-radius: 2em;
+    border-width: 0;
+    background-color: var(--orange);
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    padding: 1em 0; /* center text in the button*/
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* Thank you screen */
+
+.rating-message {
+    align-self: center;
+
+    width:max-content;
+    padding: 0.4em 0.9em;
+    background-color: var(--medium-grey);
+    
+    border-radius: 2em;
+    color: var(--orange);
+    
+}
+
+.phone {
+    align-self: center;
+    width: 11em;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.thanks p {
+    text-align: center;
+}
+
+/* Screen responsiveness */
+
+@media(max-width: 600px) {
+    
+    .main-box {
+        width: auto;
+        max-width: 410px;
+        margin: 1.5em;
+    }
+    
+}
